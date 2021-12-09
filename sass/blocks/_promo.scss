@@ -1,0 +1,61 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 36px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    cursor: pointer;
+
+    span {
+        width: 30px;
+        height: 3px;
+        background-color: #151812;
+
+        &:nth-child(2) {
+            width: 36px;
+        }
+    }
+}
+
+.promo {
+    position: relative;
+    min-height: 100vh;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+
+    &__title {
+        width: 530px;
+        margin-top: 10px;
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 1;
+        @include before_circle;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        width: 250px;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
